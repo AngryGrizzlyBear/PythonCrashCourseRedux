@@ -75,6 +75,7 @@ print("Sorry, " + cancelled_invitations + " but I can no longer invite you to di
 
 print("\nHey, " + dinner_invitations[0] + " you're still invited! Please come!")
 print("Hey, " + dinner_invitations[1] + " you're still invited! Please come!")
+print("\nI'm inviting " + str(len(dinner_invitations)) + " guest.")
 del dinner_invitations[0]
 del dinner_invitations[0]
 print(dinner_invitations)
