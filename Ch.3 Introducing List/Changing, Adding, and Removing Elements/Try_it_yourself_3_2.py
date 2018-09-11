@@ -17,6 +17,7 @@ print(dinner_invitations[2] + ", You have been invited to dinner!")
 # Modify your list, replacing the name of the guest who can't make it with the name of the new person
 # you are inviting.
 # Print a second set of invitation messages, one for each person who is still in your list.
+
 print("Oh no! " + dinner_invitations[2] + " can't make it!" )
 
 del dinner_invitations[2]
