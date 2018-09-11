@@ -26,3 +26,25 @@ print(dinner_invitations[0] + ", You have been invited to dinner!")
 print(dinner_invitations[1] + ", You have been invited to dinner!")
 print(dinner_invitations[2] + ", You have been invited to dinner!")
 
+# 3-6 More Guest: You just found a bigger dinner table, so now more space is available.
+# Think of three more guest to invite to the dinner table.
+# Start with your program from Exercise 3-4 or Exercise 3-5. Add a print statement to the end
+# of your program informing that you found a bigger table.
+# Use insert() to add one new guest to the beginning of your list.
+# Use insert() to add one new guest to the end of your list.
+# Use append() to add one new guest to the end of your list.
+# Print a new set of invitation messages, one for each person in your list.
+
+print("\nI found a bigger table! I wish to invite more people!\n")
+
+dinner_invitations.insert(0, 'Thomas')
+dinner_invitations.insert(2, 'Stacy')
+dinner_invitations.append('Marcus')
+
+
+print(dinner_invitations[0] + ", You have been invited to dinner!")
+print(dinner_invitations[1] + ", You have been invited to dinner!")
+print(dinner_invitations[2] + ", You have been invited to dinner!")
+print(dinner_invitations[3] + ", You have been invited to dinner!")
+print(dinner_invitations[4] + ", You have been invited to dinner!")
+print(dinner_invitations[5] + ", You have been invited to dinner!")
