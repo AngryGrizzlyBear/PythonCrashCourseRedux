@@ -44,3 +44,8 @@ for pizza in pizzas[5:]:
 for pizza2 in friends_pizzas[5:]:
     print("My friend added:")
     print(pizza2.title())
+
+# 4-12. More Loops: All versions of foods.py in this section have avoided using
+# for loops when printing to save space. Choose a version of foods.py, and
+# write two for loops to print each list of foods
+# I technically did this already in 4-11.
