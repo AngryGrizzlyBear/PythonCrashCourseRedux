@@ -21,5 +21,12 @@ for name in favorite_languages.keys():
     if 'erin' not in favorite_languages.keys():
         print('Erin, please take our poll!')
 
+# Sorted function
+
 for name in sorted(favorite_languages.keys()):
     print(name.title() + ', thank you for taking the poll.')
+
+# Looping through all the values in a dictionary
+print("\nThe following languages have been mentioned: ")
+for language in favorite_languages.values():
+    print(language.title())
