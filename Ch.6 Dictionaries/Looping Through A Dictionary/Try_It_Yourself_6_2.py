@@ -7,7 +7,7 @@
 
 programming_meaning = {'Variable': 'To name something.',
                        'List': 'A variable that holds a collective of information.',
-                       'Dictionary' : 'Holds even more stuff. Think of a bigger list with options.',
+                       'Dictionary': 'Holds even more stuff. Think of a bigger list with options.',
                        'Loops': 'Goes around and around.',
                        'For Loops': 'Cooler than while loops.',
                        'More Loops': 'Is more loops.',
