@@ -18,3 +18,19 @@ programming_meaning = {'Variable': 'To name something.',
 
 for name, meaning in programming_meaning.items():
     print("The definition of " + name.title() + " is: " + meaning)
+
+# 6-5. Rivers: Make a dictionary containing three major rivers and the country
+# each river runs through. One key-value pair might be 'nile': 'egypt'.
+# •	 Use a loop to print a sentence about each river, such as The Nile runs
+# through Egypt.
+# •	 Use a loop to print the name of each river included in the dictionary.
+# •	 Use a loop to print the name of each country included in the dictionary
+
+rivers = {'ganges': 'india',
+          'mississipi': 'mississipi',
+          'nile': 'egypt',
+          }
+
+for river, place in rivers.items():
+    print("\nThe " + river.title() + " River is located in "
+          + place.title() + "!")
