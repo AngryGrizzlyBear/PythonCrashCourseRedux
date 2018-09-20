@@ -8,3 +8,15 @@ favorite_languages = {
 for name, language in favorite_languages.items():
     print(name.title() + "'s, favorite language is " +
           language.title() + ".")
+
+friends = ['phil', 'sarah']
+for name in favorite_languages.keys():
+    print(name.title())
+
+    if name in friends:
+        print("Hi " + name.title() +
+              ", I see your fravorite language is " +
+              favorite_languages[name].title() + "!")
+
+    if 'erin' not in favorite_languages.keys():
+        print('Erin, please take our poll!')
