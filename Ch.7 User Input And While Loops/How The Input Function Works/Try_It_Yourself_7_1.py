@@ -16,3 +16,14 @@ if dinner > 8:
     print("You'll have to wait for a table.")
 else:
     print("Your table is ready.")
+
+# Multiples of Ten: Ask the user for a number, and then report
+# whether the number is a multple of 10 or not.
+
+number = input("Give me a number, please: ")
+number = int(number)
+
+if number % 10 == 0:
+    print(str(number) + " is a multiple of 10.")
+else:
+    print(str(number) + " is not a multiple of 10.")
