@@ -38,12 +38,12 @@ while True:
 # •	 Use a conditional test in the while statement to stop the loop.
 # •	 Use an active variable to control how long the loop runs.
 # •	 Use a break statement to exit the loop when the user enters a 'quit' value
-# Omitting this test, as it's been done before.
+# Omitting his test, as it's been done before.
 
 # 7-7. Infinity: Write a loop that never ends, and run it. (To end the loop, press
 # ctrl-C or close the window displaying the output.)
- x = 1
- while x <= 5:
-     print(x)
-     x += 1
+x = 1
+while x <= 5:
+    print(x)
+    x += 1
 # If I remove x += 1, then the loop will run forever.
