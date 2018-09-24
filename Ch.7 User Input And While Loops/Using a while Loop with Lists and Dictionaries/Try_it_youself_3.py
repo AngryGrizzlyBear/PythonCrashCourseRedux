@@ -5,9 +5,14 @@
 # of finished sandwiches. After all the sandwiches have been made, print a
 # message listing each sandwich that was made.
 
-sandwhich_orders = ['veggie', 'grilled cheese', 'turkey', 'roast beef']
+sandwhich_orders = ['pastrami', 'veggie', 'grilled cheese', 'pastrami', 'turkey', 'roast beef', 'pastrami']
 finished_sandwhiches = []
 
+print("I'm sorry, we're all out of pastrami today.")
+while 'pastrami' in sandwhich_orders:
+    sandwhich_orders.remove('pastrami')
+
+print("\n")
 while sandwhich_orders:
     current_sandwhich = sandwhich_orders.pop()
     print("I'm working on your " + current_sandwhich + " sandwhich.")
