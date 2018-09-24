@@ -5,3 +5,4 @@ while 'cat' in pets:
     pets.remove('cat')
 
 print(pets)
+
