@@ -32,10 +32,18 @@ while True:
         print(" Your ticket is $10.")
     else:
         print(" Your ticket is $15.")
+
 # 7-6. Three Exits: Write different versions of either Exercise 7-4 or Exercise 7-5
 # that do each of the following at least once:
 # •	 Use a conditional test in the while statement to stop the loop.
 # •	 Use an active variable to control how long the loop runs.
 # •	 Use a break statement to exit the loop when the user enters a 'quit' value
+# Omitting this test, as it's been done before.
+
 # 7-7. Infinity: Write a loop that never ends, and run it. (To end the loop, press
 # ctrl-C or close the window displaying the output.)
+ x = 1
+ while x <= 5:
+     print(x)
+     x += 1
+# If I remove x += 1, then the loop will run forever.
