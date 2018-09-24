@@ -5,3 +5,4 @@ while current_number < 10:
         continue
 
     print(current_number)
+
