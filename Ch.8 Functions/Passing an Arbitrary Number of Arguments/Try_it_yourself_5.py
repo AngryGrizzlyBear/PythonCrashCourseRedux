@@ -17,6 +17,7 @@ make_sandwhich('peanut butter', 'strawberry jam')
 # 8-13. User Profile: Start with a copy of user_profile.py from page 153. Build
 # a profile of yourself by calling build_profile(), using your first and last names
 # and three other key-value pairs that describe you.
+
 # 8-14. Cars: Write a function that stores information about a car in a dictionary.
 # The function should always receive a manufacturer and a model name. It
 # should then accept an arbitrary number of keyword arguments. Call the function
@@ -25,3 +26,20 @@ make_sandwhich('peanut butter', 'strawberry jam')
 # car = make_car('subaru', 'outback', color='blue', tow_package=True)
 # Print the dictionary that’s returned to make sure all the information was
 # stored correctly
+def make_car(manufacturer, model, **options):
+    """Make a dictionary representing a car."""
+    car_dict = {
+        'manufacturer': manufacturer.title(),
+        'model': model.title(),
+    }
+    for option, value in options.items():
+        car_dict[option] = value
+
+    return car_dict
+
+my_outback = make_car('subaru', 'outback', color = 'blue', tow_package=True)
+print(my_outback)
+
+my_accord = make_car('honda', 'accord', year = 1991, color = 'white',
+                     headlights = 'popup')
+print(my_accord)
