@@ -24,15 +24,23 @@ class Car():
     def increment_odometer(self, miles):
         self.odometer_reading += miles
 
+class Battery():
+    """A simple attempt to model a battery for an electric car."""
+
+    def __init__(self, battery_size=70):
+        """Initialize the battery's attributes."""
+        self.battery_size = battery_size
+
+    def describe_battery(self):
+        """Print a statement describing the battery size."""
+        print("This car a " + str(self.battery_size) + "-kWh battery")
+
 class ElecticCar(Car):
     """Represent aspects of a car, specific to electric vehicles."""
     def __init__(self, make, model, year):
         """Initialize attributes of the parent class."""
         super().__init__(make, model, year)
-        self.battery_size = 70
-    def describe_battery(self):
-        """Print a statement describing the battery size."""
-        print("This car has a " + str(self.battery_size) + "-kWh battery.")
+        self.battery = Battery()
     # Overriding Methods from the Parent Class
     def fill_gas_tank(self):
         """Electric cars don't have gas tanks."""
@@ -40,4 +48,4 @@ class ElecticCar(Car):
 
 my_tesla = ElecticCar('tesla', 'model s', '2016')
 print(my_tesla.get_descriptive_name())
-my_tesla.describe_battery()
+my_tesla.battery.describe_battery()
