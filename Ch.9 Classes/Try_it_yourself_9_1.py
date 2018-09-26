@@ -33,6 +33,16 @@ restaurant.open_resturant()
 # different instances from the class, and call describe_restaurant() for each
 # instance.
 
+restaurant = Restaurant('the mighty hippo', 'chicken')
+restaurant.descsribe_resturant()
+
+restaurant = Restaurant('wacky tackies', 'burgers')
+restaurant.descsribe_resturant()
+
+restaurant = Restaurant('Mc-Stankies', 'fries')
+restaurant.descsribe_resturant()
+
+
 # 9-3. Users: Make a class called User. Create two attributes called first_name
 # and last_name, and then create several other attributes that are typically stored
 # in a user profile. Make a method called describe_user() that prints a summary
