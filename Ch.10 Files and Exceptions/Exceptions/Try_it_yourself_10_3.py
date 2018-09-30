@@ -50,6 +50,16 @@ while True:
 # catch the FileNotFound error, and print a friendly message if a file is missing. Move one of the files
 # to a different location on your system, and make sure the code in the xcept block executes properly.
 
+filenames = ['cats.txt', 'dogs.txt']
+
+for filename in filenames:
+    print("\nReading file: " + filename)
+    try:
+        with open(filename) as f:
+            contents = f.read()
+            print(contents)
+    except FileNotFoundError:
+        print("  Sorry, I can't find that file.")
 # 10-9. Silent Cats and Dogs: Modify your except block in Excersie 10-8 to fail silently if either
 # file is missing.
 
