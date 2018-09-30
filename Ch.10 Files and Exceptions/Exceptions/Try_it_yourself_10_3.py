@@ -60,7 +60,10 @@ for filename in filenames:
             print(contents)
     except FileNotFoundError:
         print("  Sorry, I can't find that file.")
+        # Or put pass here to get it to pass silently.
+
 # 10-9. Silent Cats and Dogs: Modify your except block in Excersie 10-8 to fail silently if either
 # file is missing.
+
 
 # 10-10. Common words: no.
