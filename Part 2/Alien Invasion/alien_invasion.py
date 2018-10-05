@@ -24,6 +24,7 @@ def run_game():
 
         # Watch for key board and mouse events.
         gf.check_events(ship)
+        ship.update()
         gf.update_screen(ai_settings, screen, ship)
 
 

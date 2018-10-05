@@ -8,6 +8,7 @@ def check_events():
         if event.type == pygame.QUIT:
             sys.exit()
 
+
 def update_screen(ai_settings, screen, ship):
     """Update images on the screen and flip to the new screen."""
     # Redraw the screen during each pass through the loop.
@@ -25,5 +26,11 @@ def check_events(ship):
 
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT:
+                ship.moving_right = True
+
+        elif event.type == pygame.KEYUP:
+            if event.key == pygame.K_RIGHT:
+                ship.moving_right = False
+
                 # Move the ship to the right.
                 ship.rect.centerx += 1
