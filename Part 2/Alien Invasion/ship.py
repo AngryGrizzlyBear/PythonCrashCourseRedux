@@ -5,6 +5,9 @@ class Ship():
     def __init__(self, screen):
         """Initialize the ship and set its starting position."""
         self.screen = screen
+        # Movement flags
+        self.moving_right = False
+        self.moving_left = False
 
         # Load the ship image and get its rect.
         self.image = pygame.image.load('images/ship.bmp')
@@ -22,6 +25,8 @@ class Ship():
         """Update the ship's position based on the movement flag."""
         if self.moving_right:
             self.rect.centerx += 1
+        if self.moving_left:
+            self.rect.centerx -= 1
 
 
     def blitme(self):
