@@ -33,8 +33,8 @@ def run_game():
         # Watch for key board and mouse events.
         gf.check_events(ai_settings, screen, ship, bullets)
         ship.update()
-        bullets.update()
         gf.update_bullets(bullets)
+        gf.update_aliens(aliens)
         gf.update_screen(ai_settings, screen, ship, aliens, bullets)
 
 run_game()
