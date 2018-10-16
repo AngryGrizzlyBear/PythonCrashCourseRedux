@@ -16,3 +16,4 @@ plt.tick_params(axis='both', which='major', labelsize=14)
 # Set the range for each axis.
 plt.axis([0, 1100, 0, 1100000])
 plt.show()
+
