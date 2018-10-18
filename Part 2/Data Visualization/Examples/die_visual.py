@@ -1,5 +1,7 @@
-from die import Die
 import pygal
+
+from die import Die
+
 # Create a D6
 die = Die()
 
